@@ -7,17 +7,16 @@
       </form>
       <nav>
         <router-link to="/">
-          <IconHome />
-          <IconHomeFill />
+          <IconHomeFill v-if="$route.name === 'Home'" />
+          <IconHome v-else />
         </router-link>
-        <router-link to="/"></router-link>
         <router-link to="/direct">
-          <IconDirect />
-          <IconDirectFill />
+          <IconDirectFill v-if="$route.name === 'Direct'" />
+          <IconDirect v-else/>
         </router-link>
         <router-link to="/explore">
-          <IconExplore />
-          <IconExploreFill />
+          <IconExploreFill v-if="$route.name === 'Explore'" />
+          <IconExplore v-else/>
         </router-link>
         <router-link to="/profile">Profile</router-link>
         <icon />
