@@ -14,7 +14,7 @@ export default {
         'normal',
         'small',
         'xsmall',
-        'xxsmal'
+        'xxsmall'
       ].indexOf(value) !== -1
     }
     }

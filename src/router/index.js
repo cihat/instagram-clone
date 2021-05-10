@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/Home/index.vue'
 
 const routes = [
   {
@@ -8,10 +8,46 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/direct',
+    name: 'Direct',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/About.vue')
+      import(/* webpackChunkName: "profile" */ '../views/Direct/index.vue'),  },
+  {
+    path: '/explore',
+    name: 'Explore',
+    component: () =>
+      import(/* webpackChunkName: "profile" */ '../views/Explore/index.vue'),  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () =>
+      import(/* webpackChunkName: "profile" */ '../views/Profile'),
+    children: [
+      {
+        path: '',
+        name: 'ProfilePost',
+        component: () =>
+          import(/* webpackChunkName: "ProfilePost" */ '../views/Profile/post.vue')
+      },
+      {
+        path: 'igtv',
+        name: 'ProfileIGTV',
+        component: () =>
+          import(/* webpackChunkName: "ProfilePost" */ '../views/Profile/igtv.vue')
+      },
+      {
+        path: 'save',
+        name: 'ProfileSave',
+        component: () =>
+          import(/* webpackChunkName: "ProfilePost" */ '../views/Profile/save.vue')
+      },
+      {
+        path: 'tag',
+        name: 'ProfileTag',
+        component: () =>
+          import(/* webpackChunkName: "ProfilePost" */ '../views/Profile/tag.vue')
+      },
+    ]
   }
 ]
 
