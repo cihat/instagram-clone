@@ -26,14 +26,16 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # instagram-clone-vue
 
+## Kodların bir kısmı [Eğitim videosunun](https://www.youtube.com/playlist?list=PLadt0EaV4m3AvmC3HzZ0Y2-u_Nunhj8qN) kodlarıdır.
+
 ## TODOS
 
 - [x] Vue ve React arasındaki fark. vue-cli ile proje kurulumu
 - [x] CSS alt yapısı ve tipografi. projedeki (svg) ikonların hazırlanması
 - [x] Sayfaları oluşturalım. Master-Page oluşturalım
-- [ ] Header tasarımı ve Anasayfa için layout oluşturalım
-- [ ] Proje host etmek için vercel.com deploy konfigrasyonu
-- [ ] Anasayfa'daki post componenti
+- [x] Header tasarımı ve Anasayfa için layout oluşturalım
+- [x] Proje host etmek için vercel.com deploy konfigrasyonu
+- [x] Anasayfa'daki post componenti
 - [ ] Anasayfa için api ve infinite-scroll
 - [ ] Anasayfa'daki stories alanı
 - [ ] Yorum gönder için api ve implemente edilmesi
