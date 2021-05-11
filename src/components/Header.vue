@@ -1,14 +1,17 @@
 <template>
   <header class="header">
     <Container class="header-inner">
+      <!-- Logo -->
       <router-link to="/" class="logo">
         <div class="logo">
           <img alt="Instagram" src="../img/instagram-logo.png" />
         </div>
       </router-link>
+      <!-- search -->
       <form class="search" action="#">
         <input type="text" placeholder="Search" />
       </form>
+      <!-- navigation -->
       <nav class="navigation">
         <router-link to="/">
           <IconHomeFill v-if="$route.name === 'Home'" />
@@ -63,14 +66,26 @@ export default {
 
 <style scoped lang="scss">
 .header {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: white;
   border-bottom: 1px solid rgb(var(--b6a));
 }
 
 .header-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 53px !important;
+  display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media (--t) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: var(--header-height);
+    align-items: center;
+  }
 }
 
 .logo {
@@ -84,36 +99,60 @@ export default {
 }
 
 .search {
-  text-align: center;
+  display: none;
 
-  input {
-    border: 1px solid rgb(var(--b6a));
-    border-radius: 4px;
-    background-color: rgb(var(--b3f));
-    width: 215px;
-    height: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
+  @media (--t) {
+    display: block;
+    text-align: center;
 
-    &::placeholder {
-      display: flex;
-      text-align: center;
-    }
-    &:focus {
-      outline: none;
+    input {
+      border: 1px solid rgb(var(--b6a));
+      border-radius: 4px;
+      background-color: rgb(var(--b3f));
+      width: 215px;
+      height: 28px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &::placeholder {
+        display: flex;
+        text-align: center;
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
 
 .navigation {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border-top: 1px solid rgb(var(--b6a));
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-left: 24px;
-  height: 22px;
-
+  align-items: center;
+  justify-content: space-around;
   a {
-    margin-left: 22px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (--t) {
+    border: none;
+    position: static;
+    justify-content: flex-end;
+    align-items: flex-start;
+    // padding-left: 24px;
+    height: 22px;
+
+    a {
+      margin-left: 22px;
+      margin-right: 0;
+    }
   }
 }
 

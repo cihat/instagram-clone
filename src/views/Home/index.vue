@@ -17,6 +17,41 @@ export default {
     <CustomText class="a2" tag="p" size="small">Merhaba Dünya</CustomText>
     <CustomText class="a3" tag="p" size="xsmall">Merhaba Dünya</CustomText>
     <CustomText tag="p" size="xxsmall">Merhaba Dünya</CustomText> -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
+    </p>
   </div>
 </template>
 
