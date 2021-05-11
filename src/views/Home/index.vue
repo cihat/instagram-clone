@@ -1,10 +1,9 @@
 <script>
-import CustomText from '@/components/CustomText'
-
+import Post from '@/components/Post'
 export default {
   name: 'Home',
   components: {
-    CustomText
+    Post
   }
 }
 </script>
@@ -12,57 +11,13 @@ export default {
 <template>
   <div class="Home">
     <div class="timeline">
-      <h1>Home</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
     <div class="sidebar">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
         cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
@@ -78,6 +33,7 @@ export default {
   max-width: 605px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   @media (--t) {
     max-width: none;
@@ -92,6 +48,13 @@ export default {
 
   @media (--t) {
     display: block;
+    margin-top: 16px;
+    
+
+    p {
+      position: sticky;
+      top: calc(var(--header-height) + 30px + 18px);
+    }
   }
 }
 </style>
