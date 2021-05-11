@@ -1,10 +1,12 @@
 <script>
 import MasterHeader from '@/components/Header.vue'
+import Container from '@/components/Container.vue'
 
 export default {
   name: 'App',
   components: {
-    MasterHeader
+    MasterHeader,
+    Container
   }
 }
 </script>
@@ -12,9 +14,19 @@ export default {
 <template>
   <div class="app">
     <MasterHeader />
-    <router-view />
+    <main class="main">
+      <Container>
+        <router-view />
+      </Container>
+    </main>
   </div>
 </template>
 
-<style  scoped>
+<style scoped lang="scss">
+.app {
+  height: 4000px;
+}
+.main {
+  padding-top: 30px;
+}
 </style>

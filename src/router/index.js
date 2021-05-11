@@ -16,7 +16,13 @@ const routes = [
     path: '/explore',
     name: 'Explore',
     component: () =>
-      import(/* webpackChunkName: "profile" */ '../views/Explore/index.vue'),  },
+      import(/* webpackChunkName: "profile" */ '../views/Explore/index.vue'),
+  },
+  {
+    path: '/heart',
+    name: 'Heart',
+    component: () =>
+      import(/* webpackChunkName: "profile" */ '../views/Heart/index.vue'),  },
   {
     path: '/profile',
     name: 'Profile',

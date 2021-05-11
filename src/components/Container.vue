@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 940px;
+  max-width: 935px;
   margin-left: auto;
   margin-right: auto;
 }
