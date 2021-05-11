@@ -30,7 +30,7 @@
           <IconHeart v-else />
         </router-link>
         <router-link to="/profile">
-          <div class="user-photo"></div>
+          <Avatar :size="20"/>
         </router-link>
         <icon />
       </nav>
@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import Avatar from '@/components/Avatar'
 import IconHome from '@/icons/home.vue'
 import IconHomeFill from '@/icons/home-fill.vue'
 import IconDirect from '@/icons/direct.vue'
@@ -59,7 +60,8 @@ export default {
     IconExplore,
     IconExploreFill,
     IconHeart,
-    IconHeartFill
+    IconHeartFill,
+    Avatar,
   }
 }
 </script>
@@ -136,6 +138,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 44px;
+  
   a {
     margin-left: auto;
     margin-right: auto;
