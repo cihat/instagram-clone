@@ -5,66 +5,93 @@ export default {
   name: 'Home',
   components: {
     CustomText
-    // IconHome
   }
 }
 </script>
 
 <template>
   <div class="Home">
-    <h1>Home</h1>
-    <CustomText class="a1" tag="p">Merhaba Dünya</CustomText>
-    <CustomText class="a2" tag="p" size="small">Merhaba Dünya</CustomText>
-    <CustomText class="a3" tag="p" size="xsmall">Merhaba Dünya</CustomText>
-    <CustomText tag="p" size="xxsmall">Merhaba Dünya</CustomText> -->
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-      cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-      amet minus earum vel qui adipisci a eos atque libero quas exercitationem!
-    </p>
+    <div class="timeline">
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+    </div>
+    <div class="sidebar">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
+        amet minus earum vel qui adipisci a eos atque libero quas
+        exercitationem!
+      </p>
+    </div>
   </div>
 </template>
 
-<style scoped>
-.a1 {
-  color: rgb(var(--d69));
+<style lang="scss" scoped>
+.Home {
+  max-width: 605px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (--t) {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 295px;
+    grid-gap: 30px;
+  }
 }
 
-.a2 {
-  color: rgb(var(--d69));
-}
+.sidebar {
+  display: none;
 
-.a3 {
-  color: rgb(var(--d69));
+  @media (--t) {
+    display: block;
+  }
 }
 </style>
