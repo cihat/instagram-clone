@@ -23,9 +23,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.app {
-  height: 4000px;
-}
 .main {
   padding-top: 30px;
 }
