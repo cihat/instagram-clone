@@ -45,7 +45,7 @@ export default {
 
     <!-- media -->
     <div class="post-media">
-      <img src="https://picsum.photos/600/600" alt="" />
+      <img src="https://picsum.photos/600/400?random=1" alt="" />
     </div>
 
     <!-- action -->
