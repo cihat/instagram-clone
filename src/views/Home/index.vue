@@ -1,9 +1,12 @@
 <script>
 import Post from '@/components/Post'
+import SideBar from '@/components/SideBar/SideBar'
+
 export default {
   name: 'Home',
   components: {
-    Post
+    Post,
+    SideBar
   }
 }
 </script>
@@ -18,12 +21,7 @@ export default {
       <Post />
     </div>
     <div class="sidebar">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        cupiditate nesciunt mollitia nemo eaque, quaerat rerum quod accusantium
-        amet minus earum vel qui adipisci a eos atque libero quas
-        exercitationem!
-      </p>
+      <side-bar/>
     </div>
   </div>
 </template>
@@ -39,7 +37,7 @@ export default {
     max-width: none;
     display: grid;
     grid-template-columns: 1fr 295px;
-    grid-gap: 30px;
+    grid-gap: 28px;
   }
 }
 
